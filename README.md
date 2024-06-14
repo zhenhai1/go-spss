@@ -5,7 +5,7 @@ Go library for generating SPSS files
 
 ## Install
 
-`go get -u github.com/jamiever/go-spss`
+`go get -u github.com/zhenhai1/go-spss`
 
 ## Usage
 
