@@ -76,7 +76,8 @@ type Value struct {
 	Value string
 }
 
-var nameValidatorRegex = regexp.MustCompile(`(?si)^[a-z@][a-z0-9!._#@$]*[^\.]$`)
+//var nameValidatorRegex = regexp.MustCompile(`(?si)^[a-z@][a-z0-9!._#@$]*[^\.]$`)
+var nameValidatorRegex = regexp.MustCompile(`(?si)^[a-z@\p{Han}][a-z0-9!._#@$]*[^\.]$`)
 
 func (v *Variable) getMeasure() int8 {
 	switch v.Measure {
